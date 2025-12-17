@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions - Taniti Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <span class="logo">TANITI</span>
+                    <span class="tagline">Tropical Paradise</span>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="about.html">About Taniti</a></li>
+                <li><a href="plan.html">Plan Your Visit</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="accommodations.html">Accommodations</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Things to Do in Taniti</h1>
+            <p>Discover amazing experiences on our beautiful island</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="content-section">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Activities</button>
+                <button class="filter-btn" data-filter="beach">Beaches</button>
+                <button class="filter-btn" data-filter="water">Water Sports</button>
+                <button class="filter-btn" data-filter="nature">Nature & Hiking</button>
+                <button class="filter-btn" data-filter="cultural">Cultural</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+                <button class="filter-btn" data-filter="family">Family-Friendly</button>
+            </div>
+
+            <div class="card-grid">
+                <!-- Beach Activities -->
+                <div class="card animate-on-scroll" data-category="beach" id="beaches">
+                    <div class="card-image">🏖️</div>
+                    <div class="card-content">
+                        <h3>Beach Activities</h3>
+                        <p>Relax on pristine white sand beaches surrounding Yellow Leaf Bay. Perfect for swimming, sunbathing, beach volleyball, and building sandcastles with the family.</p>
+                        <p><strong>Perfect for:</strong> Families, Couples, Solo Travelers</p>
+                        <p><strong>Location:</strong> Yellow Leaf Bay & Around the Island</p>
+                        <a href="contact.html" class="btn btn-primary">Get Information</a>
+                    </div>
+                </div>
+
+                <!-- Rainforest Hiking -->
+                <div class="card animate-on-scroll" data-category="nature" id="rainforest">
+                    <div class="card-image">🌴</div>
+                    <div class="card-content">
+                        <h3>Rainforest Hiking</h3>
+                        <p>Explore lush tropical rainforests with guided tours. Discover exotic plants, colorful birds, and stunning waterfalls on trails ranging from easy to challenging.</p>
+                        <p><strong>Perfect for:</strong> Nature Lovers, Photographers, Adventure Seekers</p>
+                        <p><strong>Duration:</strong> 2-6 hours</p>
+                        <a href="contact.html" class="btn btn-primary">Book a Tour</a>
+                    </div>
+                </div>
+
+                <!-- Volcano Tours -->
+                <div class="card animate-on-scroll" data-category="adventure" id="volcano">
+                    <div class="card-image">🌋</div>
+                    <div class="card-content">
+                        <h3>Volcano Tours</h3>
+                        <p>Visit Taniti's small active volcano with experienced guides. Safe and thrilling, this tour offers spectacular views and a unique geological experience.</p>
+                        <p><strong>Perfect for:</strong> Adventure Seekers, Geology Enthusiasts</p>
+                        <p><strong>Duration:</strong> 4-5 hours (full tour)</p>
+                        <a href="contact.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Snorkeling & Diving -->
+                <div class="card animate-on-scroll" data-category="water" id="water">
+                    <div class="card-image">🤿</div>
+                    <div class="card-content">
+                        <h3>Snorkeling & Diving</h3>
+                        <p>Discover vibrant coral reefs and tropical fish in crystal-clear waters. Equipment rentals and guided diving tours available for all skill levels.</p>
+                        <p><strong>Perfect for:</strong> Water Sports Enthusiasts, Marine Life Lovers</p>
+                        <p><strong>Requirements:</strong> Basic swimming skills (snorkeling), Certification (scuba diving)</p>
+                        <a href="contact.html" class="btn btn-primary">Book Adventure</a>
+                    </div>
+                </div>
+
+                <!-- Local History Museum -->
+                <div class="card animate-on-scroll" data-category="cultural">
+                    <div class="card-image">🏛️</div>
+                    <div class="card-content">
+                        <h3>Local History Museum</h3>
+                        <p>Learn about Taniti's rich cultural heritage, indigenous history, and the evolution from fishing village to tourist destination.</p>
+                        <p><strong>Perfect for:</strong> History Buffs, Families, Cultural Travelers</p>
+                        <p><strong>Hours:</strong> Daily 9am-5pm</p>
+                        <a href="contact.html" class="btn btn-primary">Visit Details</a>
+                    </div>
+                </div>
+
+                <!-- Fishing Charters -->
+                <div class="card animate-on-scroll" data-category="water">
+                    <div class="card-image">🎣</div>
+                    <div class="card-content">
+                        <h3>Chartered Fishing Tours</h3>
+                        <p>Experience traditional Tanitian fishing with local guides. Half-day and full-day charters available. All equipment provided.</p>
+                        <p><strong>Perfect for:</strong> Fishing Enthusiasts, Groups</p>
+                        <p><strong>Duration:</strong> 4-8 hours</p>
+                        <a href="contact.html" class="btn btn-primary">Charter a Boat</a>
+                    </div>
+                </div>
+
+                <!-- Zip-lining -->
+                <div class="card animate-on-scroll" data-category="adventure">
+                    <div class="card-image">🪂</div>
+                    <div class="card-content">
+                        <h3>Rainforest Zip-lining</h3>
+                        <p>Soar through the treetops on thrilling zip-line courses. Multiple lines offer different difficulty levels and spectacular rainforest views.</p>
+                        <p><strong>Perfect for:</strong> Thrill Seekers, Adventure Families</p>
+                        <p><strong>Age Requirement:</strong> 8+ years old</p>
+                        <a href="contact.html" class="btn btn-primary">Book Adventure</a>
+                    </div>
+                </div>
+
+                <!-- Helicopter Tours -->
+                <div class="card animate-on-scroll" data-category="adventure">
+                    <div class="card-image">🚁</div>
+                    <div class="card-content">
+                        <h3>Helicopter Island Tours</h3>
+                        <p>See Taniti from above! Breathtaking aerial views of beaches, rainforest, volcano, and the entire island. Tours from 15 minutes to 1 hour.</p>
+                        <p><strong>Perfect for:</strong> Special Occasions, Photographers</p>
+                        <p><strong>Duration:</strong> 15-60 minutes</p>
+                        <a href="contact.html" class="btn btn-primary">Book Flight</a>
+                    </div>
+                </div>
+
+                <!-- Art Galleries -->
+                <div class="card animate-on-scroll" data-category="cultural">
+                    <div class="card-image">🎨</div>
+                    <div class="card-content">
+                        <h3>Art Galleries</h3>
+                        <p>Explore local and regional art at several galleries in Taniti City and Merriton Landing. Features traditional Tanitian art and contemporary works.</p>
+                        <p><strong>Perfect for:</strong> Art Lovers, Souvenir Shoppers</p>
+                        <p><strong>Location:</strong> Taniti City & Merriton Landing</p>
+                        <a href="contact.html" class="btn btn-primary">Gallery Info</a>
+                    </div>
+                </div>
+
+                <!-- Boat Tours -->
+                <div class="card animate-on-scroll" data-category="water">
+                    <div class="card-image">⛵</div>
+                    <div class="card-content">
+                        <h3>Island Boat Tours</h3>
+                        <p>Cruise around the island to see hidden beaches, sea caves, and marine wildlife. Sunset tours available for a romantic experience.</p>
+                        <p><strong>Perfect for:</strong> Couples, Families, Nature Lovers</p>
+                        <p><strong>Duration:</strong> 2-4 hours</p>
+                        <a href="contact.html" class="btn btn-primary">Book Tour</a>
+                    </div>
+                </div>
+
+                <!-- Entertainment District -->
+                <div class="card animate-on-scroll" data-category="family">
+                    <div class="card-image">🎪</div>
+                    <div class="card-content">
+                        <h3>Merriton Landing Entertainment</h3>
+                        <p>Visit the rapidly developing entertainment area featuring pubs, a microbrewery, dance club, movie theater, arcade, and bowling alley.</p>
+                        <p><strong>Perfect for:</strong> Evening Entertainment, Groups, Families</p>
+                        <p><strong>Location:</strong> Merriton Landing, Yellow Leaf Bay</p>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Golf Course (Coming Soon) -->
+                <div class="card animate-on-scroll" data-category="family">
+                    <div class="card-image">⛳</div>
+                    <div class="card-content">
+                        <h3>Nine-Hole Golf Course</h3>
+                        <p>Opening next year! A scenic nine-hole course with ocean views. Perfect for a leisurely morning or afternoon round.</p>
+                        <p><strong>Perfect for:</strong> Golf Enthusiasts</p>
+                        <p><strong>Status:</strong> Opening Soon</p>
+                        <a href="contact.html" class="btn btn-primary">Get Updates</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="content-section" style="background: var(--bg-cream); text-align: center;">
+        <div class="container">
+            <h2 class="section-title">Ready to Explore Taniti?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.1rem; color: var(--text-light);">
+                From relaxing beaches to thrilling adventures, Taniti offers unforgettable experiences for every traveler.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="accommodations.html" class="btn btn-primary">Find Lodging</a>
+                <a href="plan.html" class="btn btn-outline">Plan Your Trip</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About Taniti</h4>
+                    <ul>
+                        <li><a href="about.html">Island History</a></li>
+                        <li><a href="about.html#culture">Culture & People</a></li>
+                        <li><a href="plan.html#safety">Safety Information</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Plan Your Visit</h4>
+                    <ul>
+                        <li><a href="plan.html#transportation">Transportation</a></li>
+                        <li><a href="plan.html#currency">Currency & Banks</a></li>
+                        <li><a href="plan.html#language">Language</a></li>
+                        <li><a href="plan.html#faq">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Things to Do</h4>
+                    <ul>
+                        <li><a href="attractions.html#beaches">Beaches</a></li>
+                        <li><a href="attractions.html#rainforest">Rainforest Tours</a></li>
+                        <li><a href="attractions.html#volcano">Volcano Visits</a></li>
+                        <li><a href="attractions.html#water">Water Activities</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Important Info</h4>
+                    <ul>
+                        <li><a href="plan.html#emergency">Emergency Contacts</a></li>
+                        <li><a href="plan.html#health">Hospital & Clinics</a></li>
+                        <li><a href="plan.html#holidays">National Holidays</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Taniti Tourism Board. All rights reserved.</p>
+                <p class="footer-note">Discover your perfect island getaway.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
